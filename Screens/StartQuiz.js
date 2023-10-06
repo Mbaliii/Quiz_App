@@ -1,7 +1,14 @@
 import React from "react";
 import { Text, SafeAreaView, StyleSheet } from "react-native";
+import questions from "./questions";
+
+
 
 const StartQuiz = () => {
+    const data = questions;
+    const currentQuestion = data[0];
+    console.log(currentQuestion);
+
     return (
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>Quizz</Text>
